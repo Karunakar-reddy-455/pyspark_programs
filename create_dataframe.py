@@ -8,5 +8,5 @@ columns = ['id','name','salary']
 rdd1 = spark.sparkContext.parallelize(data)
 
 df = spark.createDataFrame(rdd1).toDF(*columns)
-
+print("dataframe")
 df.show(truncate=False)
